@@ -22,5 +22,15 @@ dish = dishes[random.randint(0, 7)]
 for tweet in Cursor(auth_api.search, tweet_mode="extended", q=dish + '-filter:retweets', lang="en").items(50):
     tweets.append(tweet.full_text)
 
-print(tweets[random.randint(0, 50)])
+app = flask.Flask(__name__, template_folder='./templates')
 
+
+@app.route("/")
+def index():
+    return flask.render_template("index.html", tweets=tweets[random.randint(0, len(dishes)-1)])
+
+
+app.run(
+    port=int(os.getenv('PORT', 5500)),
+    debug=True
+)
