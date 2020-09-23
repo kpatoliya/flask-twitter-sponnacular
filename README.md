@@ -2,7 +2,7 @@
 ![](screenshot.jpg)     
 <br />
 
-##Requirements
+## Requirements
 To run this project we need API keys for twitter which we can get by signing up into
  twitter developer portal at https://developer.twitter.com  
 
@@ -25,19 +25,19 @@ sudo pip3 install flask
 sudo pip3 install tweepy  
 ```
 
-##Run
+## Run
 Run the project using 
 ```
 python main.py
 ```
  View this webpage at http://127.0.0.1:5000/
  
- ###Issues
+ ### Issues
  - Accessing tweets with cursor was initially giving me retweets in some searches with regular tweets. I fixed this issue 
  by adding filter to search term to filter retweets.
      ```
       Cursor(auth_api.search, tweet_mode="extended", q=dish + '-filter:retweets', lang="en").items(50)
      ``` 
- ###Known Problems
+ ### Known Problems
  - None
  
