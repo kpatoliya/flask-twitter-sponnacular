@@ -33,3 +33,9 @@ h1{
   background: #e76f7d;
   margin: auto;
 }
+
+img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}

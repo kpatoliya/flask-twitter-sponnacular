@@ -2,3 +2,5 @@
 /venv
 .idea/
 .DS_Store
+temp.txt
+./templates/restaurant_list.html
