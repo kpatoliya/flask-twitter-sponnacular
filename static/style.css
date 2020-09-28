@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 body{
-    background-color: #4cc0de;
+    background-color: rgb(19, 153, 236);
 }
 h1{
   padding: 20px;
@@ -10,8 +10,8 @@ h1{
 
 .grid-container {
   display: grid;
-  grid-column-gap: 5px;
-  grid-template-columns: auto auto;
+    grid-row-gap: 10px;
+  grid-template-columns: auto;
   padding: 10px;
 }
 .tweet{
@@ -19,23 +19,34 @@ h1{
   padding: 15px;
   text-align: center;
   font-family: 'Bowlby One SC', cursive;
-  width: 80%;
+  width: 70%;
   background: #e76f7d;
-  margin: auto;
+  margin-left: auto;
 }
 
 .grid-item {
   border-radius: 25px;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   font-family: 'Bowlby One SC', cursive;
-  width: 30%;
   background: #e76f7d;
-  margin: auto;
+  margin-left: 70%;
 }
 
-img {
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+/*.icon{*/
+/*    float: left;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*}*/
+.img_recipe{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 4px 10px 0 rgba(34, 60, 80, .16);
+    transition: all ease-in-out .2s;
 }
+.img_recipe:hover {
+    box-shadow: 0 15px 30px 15px rgba(34,60,80,.16);
+}
+
+

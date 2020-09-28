@@ -8,16 +8,15 @@
 
 <body>
 <div>
-    <h1>Tweet for Search Term: {{ dish }}</h1>
+    <h1>{{ recipe }}</h1>
 </div>
-<div class="tweet">{{tweets}}</div>
+
+<div class="tweet">  {{tweets}} </div>
 <div class="grid-container">
     <div class="grid-item">{{ username }}</div>
     <div class="grid-item">{{ created_at }}</div>
 </div>
-<div><img src={{ image }}></div>
-
-
+<img class="img_recipe" src={{image}}  alt="image of recipe"/>
 
 </body>
 </html>
