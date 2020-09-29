@@ -68,6 +68,6 @@ def index():
 
 
 app.run(
-    port=int(os.getenv('PORT', 5000)),
+    port=int(os.getenv('PORT', 8080)),
     debug=True
 )
