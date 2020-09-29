@@ -8,7 +8,29 @@
 
 <body>
 <div>
+    <form class="input" method="POST">
+        <input class="form" type="text" placeholder="Enter food item" name="foodItem" />
+        <button class="buttonPost" type="submit">Go</button>
+    </form>
+</div>
+<div>
     <h1>{{ recipe }}</h1>
+    <h2>-{{ sourceName }}</h2>
+</div>
+<div class="grid-container-recipe">
+    <div class="grid-item-image"><img class="img_recipe" src={{image}}  alt="image of recipe"/></div>
+    <div class="grid-item-recipe">
+        <p>    Prep Time: {{ time }}min.</p>
+        <ul>
+        {%for i in range(0, length)%}
+        <li>
+            {{ ingredients[i] }}
+        </li>
+        {%endfor%}
+        </ul>
+        <br/> <button class="button" onclick="location.href='{{ url }}'" type="button">
+            Link to recipe Page</button>
+    </div>
 </div>
 
 <div class="tweet">  {{tweets}} </div>
@@ -16,7 +38,6 @@
     <div class="grid-item">{{ username }}</div>
     <div class="grid-item">{{ created_at }}</div>
 </div>
-<img class="img_recipe" src={{image}}  alt="image of recipe"/>
 
 </body>
 </html>
