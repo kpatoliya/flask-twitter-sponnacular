@@ -3,42 +3,38 @@ body{
     background-color: rgb(19, 153, 236);
 }
 h1{
-  padding: 20px;
-  text-align: center;
-  font-size: 30px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bowlby One SC', cursive;
+}
+h2{
+    text-align: right;
+    margin-right: 15%;
+}
+.button {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    font-family: 'Bowlby One SC', cursive;
 }
 
-.grid-container {
-  display: grid;
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+.grid-container-recipe {
+    display: grid;
     grid-row-gap: 10px;
-  grid-template-columns: auto;
-  padding: 10px;
-}
-.tweet{
-  border-radius: 35px;
-  padding: 15px;
-  text-align: center;
-  font-family: 'Bowlby One SC', cursive;
-  width: 70%;
-  background: #e76f7d;
-  margin-left: auto;
+    grid-template-columns: auto auto;
+    padding: 10px;
 }
 
-.grid-item {
-  border-radius: 25px;
-  padding: 5px;
-  text-align: center;
-  font-family: 'Bowlby One SC', cursive;
-  background: #e76f7d;
-  margin-left: 70%;
-}
-
-/*.icon{*/
-/*    float: left;*/
-/*    width: 50px;*/
-/*    height: 50px;*/
-/*}*/
 .img_recipe{
+
     border-radius: 50%;
     width: 350px;
     height: 350px;
@@ -48,5 +44,76 @@ h1{
 .img_recipe:hover {
     box-shadow: 0 15px 30px 15px rgba(34,60,80,.16);
 }
+.grid-item-image {
+    padding-left: 60px;
+}
+.grid-item-recipe {
+    border-radius: 25px;
+    padding: 5px;
+    text-align: left;
+    font-family: 'Bowlby One SC', cursive;
+    background: #ecdd6a;
+    margin-left: auto;
+    height: auto;
+    width: 500px;
+}
+.grid-container {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+.tweet{
+    border-radius: 35px;
+    margin-top: 180px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    width: 50%;
+    background: #e76f7d;
+    margin-left: auto;
+}
 
+.grid-item {
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    background: #e76f7d;
+    margin-left: auto;
+    width: 25%;
+}
+
+.form{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+    margin-left: 20px;
+    margin-top: 40px;
+    max-width:300px;
+}
+
+.buttonPost{
+    float: left;
+    width: 5%;
+    padding: 10px;
+    background: #ecdd6a;
+    color: white;
+    font-size: 17px;
+    margin-top: 40px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.buttonPost:hover {
+    background: #4e5556;
+}
+
+.form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
