@@ -58,7 +58,7 @@ python3 main.py
  I fixed this issue by checking if its POST only then get search term from form else render random recipe on reload.
  
  ### Known Problems
- - No issues for with any requirements for M@
+ - No issues with any requirements for M2
  - There exist a problem with search box which gives an error when there are zero 
   recipes found. I would try to redirect the page on error to either display random recipe
   or display message showing 'No recipes found'
