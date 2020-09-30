@@ -1,5 +1,5 @@
 # project1-kmp87 
-![](screenshot.jpg)     
+![](screenshot.png)     
 <br />
 
 ## Requirements
