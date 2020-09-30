@@ -41,7 +41,6 @@ def index():
                            + "&apiKey=" + spoonacular_api)
     json_response = json.loads(content.text)
     randomRecipe = random.randint(0, len(json_response['results']) - 1)
-    nameRecipe = json_response['results'][randomRecipe]['title']
     idRecipe = str(json_response['results'][randomRecipe]['id'])
     imageRecipe = json_response['results'][randomRecipe]['image']
 

@@ -3,7 +3,6 @@
 <head>
     <title>Project1 CS490</title>
     <link rel="stylesheet" href="../static/style.css" />
-
 </head>
 
 <body>
@@ -20,7 +19,7 @@
 <div class="grid-container-recipe">
     <div class="grid-item-image"><img class="img_recipe" src={{image}}  alt="image of recipe"/></div>
     <div class="grid-item-recipe">
-        <p>    Prep Time: {{ time }}min.</p>
+        <p>    Prep Time: {{ time }} min.</p>
         <ul>
         {%for i in range(0, length)%}
         <li>
