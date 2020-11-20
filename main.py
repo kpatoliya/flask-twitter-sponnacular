@@ -31,6 +31,12 @@ def index():
     content = requests.get("https://api.spoonacular.com/recipes/complexSearch?query=" + dish
                            + "&apiKey=" + os.getenv('SPOONACULAR_KEY'))
     json_response = json.loads(content.text)
+    if len(json_response['results']) == 0:
+        content = requests.get("https://api.spoonacular.com/recipes/complexSearch?query="
+                               + "&apiKey=" + os.getenv('SPOONACULAR_KEY'))
+        json_response = json.loads(content.text)
+        dish = ''
+
     randomRecipe = random.randint(0, len(json_response['results']) - 1)
     idRecipe = str(json_response['results'][randomRecipe]['id'])
     imageRecipe = json_response['results'][randomRecipe]['image']
